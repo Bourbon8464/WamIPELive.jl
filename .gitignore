@@ -1,0 +1,20 @@
+# Julia / general
+Manifest.toml
+*.jl~ 
+*.bak
+*.DS_Store
+
+# Development caches and test data
+/cache/
+/data/
+/notebooks/
+/output/
+/tmp/
+/.venv/
+/.env/
+WamIPELive.jl.old
+
+# Personal files
+local_config.jl
+notes/
+drafts/
