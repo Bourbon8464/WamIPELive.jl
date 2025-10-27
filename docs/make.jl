@@ -21,6 +21,5 @@ makedocs(
     ],
 )
 
-deploydocs(; 
-repo = "https://github.com/Space-FALCON-Lab/SpaceAGORA.jl",  
-devbranch = "main")
+deploydocs(; repo = "https://github.com/Bourbon8464/WamIPELive.jl",  
+branch = "gh-pages", devbranch = "main")
