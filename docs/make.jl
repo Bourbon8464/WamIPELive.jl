@@ -21,4 +21,7 @@ makedocs(
     ],
 )
 
-deploydocs(; repo = "https://github.com/Space-FALCON-Lab/SpaceAGORA.jl", devbranch = "main")
+deploydocs(; 
+repo = "https://github.com/Space-FALCON-Lab/SpaceAGORA.jl",  
+branch = "gh-pages", 
+devbranch = "main")

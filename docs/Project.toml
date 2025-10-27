@@ -1,4 +1,5 @@
 [deps]
 Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
+DocumenterTools = "35a29f4d-8980-5a13-9543-d66fff28ecb8"
 MbedTLS = "739be429-bea8-5141-9913-cc70e7f3736d"
 WamIPELive = "ce303321-47c6-4fe3-86fa-9b5a4cb5b80c"
