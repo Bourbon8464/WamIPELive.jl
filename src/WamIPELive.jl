@@ -12,7 +12,7 @@ using DataInterpolations
 
 export WFSInterpolator, get_value, get_batch, print_cache_stats, list_vars, dump_sample, dump_all
 
-# =============================== Configuration ===============================
+#   Configuration  
 
 """
     WFSInterpolator; kwargs...
@@ -43,7 +43,7 @@ const _ALLOWED_INTERP_NORM = Set([:nearest, :linear, :logz_linear, :logz_quadrat
 const _UA = "WFS.jl/0.1 (+https://example.invalid)"
 const _HDRS = ["User-Agent" => _UA, "Accept" => "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"]
 
-# ================================ HTTP layer =================================
+#  = HTTP layer  ==
 
 function _http_get_classify(url::AbstractString; readtimeout::Int=60)
     try
@@ -74,7 +74,7 @@ function _http_head_exists(url::AbstractString; readtimeout::Int=30)::Union{Bool
     end
 end
 
-# ================================== Cache ====================================
+#  === Cache  =====
 
 const _CACHE_META_FILE = "metadata.bin"
 mutable struct _FileCache
@@ -182,7 +182,7 @@ function _download_http_cached(itp::WFSInterpolator, url::AbstractString)
     end
 end
 
-# ============================ NOMADS directory ===============================
+# ============================ NOMADS directory  
 
 function _cycle_for_wfs(dt::DateTime)::DateTime
     h = hour(dt)
@@ -347,7 +347,7 @@ function _pick_two_files(itp::WFSInterpolator, dt::DateTime)
     error("no files found by listing or probing recent cycles for $(itp.product) around $(dt)")
 end
 
-# ================================== Grids ====================================
+#  === Grids  =====
 
 _grid_uses_360(lon::AbstractVector) = maximum(lon) > 180
 function _wrap_lon_for_grid(lon_grid::AbstractVector, lonq::Real)
@@ -678,7 +678,7 @@ function _alt_to_zindex(ds::NCDataset, lat, lon, z, t, V, latq, lonq, alt_m, zna
     (iz, tζ)
 end
 
-# ================================ Validation ================================
+#  = Validation  =
 
 function _validate_query_args(itp::WFSInterpolator, dt::DateTime, latq::Real, lonq::Real, alt_km::Real)
     mode = _normalize_interp(itp.interpolation)
@@ -690,7 +690,7 @@ function _validate_query_args(itp::WFSInterpolator, dt::DateTime, latq::Real, lo
     mode
 end
 
-# ================================== API ======================================
+#  === API  =======
 
 """
     get_value(itp::WFSInterpolator, dt::DateTime, lon::Real, lat::Real, alt_km::Real; varname=itp.varname) -> Float64

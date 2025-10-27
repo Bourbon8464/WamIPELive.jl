@@ -1,7 +1,7 @@
 name = "WamIPELive"
 uuid = "ce303321-47c6-4fe3-86fa-9b5a4cb5b80c"
-authors = ["tarun "]
 version = "0.1.0"
+authors = ["tarun "]
 
 [deps]
 CodecZlib = "944b1d66-785c-5afd-91f1-9de20f533193"
@@ -11,7 +11,8 @@ Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
 Downloads = "f43a241f-c20a-4ad4-852c-f6b1247861c6"
 EzXML = "8f5d6c58-4d21-5cfd-889c-e3ad7ee6a615"
 HTTP = "cd3eb016-35fb-5094-929b-558a96fad6f3"
-LiveServer = "16fef848-5104-11e9-1b77-fb7a48bbb589"
+MbedTLS = "739be429-bea8-5141-9913-cc70e7f3736d"
+MbedTLS_jll = "c8ffd9c3-330d-5841-b78e-0817d7145fa1"
 NCDatasets = "85f8d34a-cbdd-5861-8df4-14fed0d494ab"
 Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
 Revise = "295af30f-e4ad-537b-8983-00126c2a3abe"
@@ -28,7 +29,8 @@ Documenter = "1.14.1"
 Downloads = "1.6.0"
 EzXML = "1.2.2"
 HTTP = "1.10.17"
-LiveServer = "1.5.0"
+MbedTLS = "1.1.9"
+MbedTLS_jll = "2.28.10"
 NCDatasets = "0.14.8"
 Printf = "1.11.0"
 Revise = "3.9.0"
