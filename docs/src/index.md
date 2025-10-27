@@ -1,7 +1,7 @@
 ```@raw html
 <p style="text-align:center">
 
-<img src="docs/src/images/1708979339644.jpeg" alt="SpaceFalconLab logo" width="200" height="100">
+<img src="" alt="SpaceFalconLab logo" width="200" height="100">
 <br> 
 
 </p> 
@@ -24,8 +24,7 @@ SpaceAGORA.jl provides a comprehensive framework for simulating aerobraking mane
 - **High-Fidelity Atmosphere Modeling**: Integration with NASA's Global Reference Atmospheric Model (GRAM) suite
 - **Advanced Dynamics**: High-degree gravitational harmonics, third-body perturbations, and solar radiation pressure
 - **Multi-Target Support**: Extensible framework for various planetary bodies
-- **Performance**: Built in Julia for computational efficiency and ease of use
-using SpaceAGORA
+- **Performance**: Built in Julia for computational efficiency and ease of use using SpaceAGORA
 
 ## Installation
 
@@ -33,7 +32,7 @@ For detailed installation instructions, including Docker environment setup and G
 
 ## Documentation
 
-Comprehensive documentation is available at [Space-FALCON-Lab.github.io/SpaceAGORA.jl](https://Space-FALCON-Lab.github.io/SpaceAGORA.jl/stable/):
+Comprehensive documentation is available on [Github](https://Space-FALCON-Lab.github.io/SpaceAGORA.jl/stable/) till migration:
 
 - [Installation Guide](https://Space-FALCON-Lab.github.io/SpaceAGORA.jl/stable/installation/)
 - [Quick Start Tutorial](https://Space-FALCON-Lab.github.io/SpaceAGORA.jl/stable/quickstart/)
