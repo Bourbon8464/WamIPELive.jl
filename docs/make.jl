@@ -21,5 +21,5 @@ makedocs(
     ],
 )
 
-deploydocs(; repo = "https://github.com/Bourbon8464/WamIPELive.jl",  
+deploydocs(; repo = "github.com/Bourbon8464/WamIPELive.jl.git",  
 branch = "gh-pages", devbranch = "main")
