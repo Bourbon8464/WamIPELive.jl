@@ -1,7 +1,7 @@
 ```@raw html
 <p style="text-align:center">
 
-<img src="" alt="SpaceFalconLab logo" width="200" height="100">
+<img src="https://github.com/Bourbon8464/WamIPELive.jl/blob/main/docs/src/assets/spaceFalconLogo.png?raw=true" alt="SpaceFalconLab logo" width="200" height="100">
 <br> 
 
 </p> 
