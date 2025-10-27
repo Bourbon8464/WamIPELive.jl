@@ -23,5 +23,4 @@ makedocs(
 
 deploydocs(; 
 repo = "https://github.com/Space-FALCON-Lab/SpaceAGORA.jl",  
-branch = "gh-pages", 
 devbranch = "main")
